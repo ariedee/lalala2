@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #800000; /* Cor de fundo */
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    color: #fff; /* Cor do texto */
+}
+
+.foto {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.frase {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.falling-heart {
+    position: absolute;
+    top: -50px;
+    font-size: 24px;
+    color: #ff0000;
+    animation: fall linear infinite;
+    z-index: 1;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
